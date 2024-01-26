@@ -3,7 +3,7 @@
 @section('content')
     {{-- HEADER --}}
     <header class="d-flex container-fluid justify-content-between">
-        <img class="mt-4" src="assets/img/dc-logo.png" alt="">
+        <img class="mt-4" src="/assets/img/dc-logo.png" alt="">
         <nav class="d-flex align-items-center">
             @foreach ($dati['menuLink'] as $menuLink)
                 <a class="linkItem px-3" href="">{{ $menuLink['link'] }}</a>
@@ -19,24 +19,11 @@
 
     <div class="jumbotron"></div>
 
-    {{-- CURRENT SERIES SECTION --}}
-
-    <section>
-        <div class="titleCurrentSeries">
-            CURRENT SERIES
+    <div class="container">
+        <div class="row cardDetail">
+            <img class="comicDetail" src="{{ $detail->thumb }}" alt="">
+            <h2 class="mt-5">{{ $detail->title }}</h2>
+            <p class="mt-4">{{ $detail->description }}</p>
         </div>
-        <div class="d-flex flex-wrap container p-5">
-
-            @foreach ($comics as $comic)
-                <div class="cards">
-                    <img class="comics" src=" {{ $comic['thumb'] }} " alt="">
-                    <p class="text-uppercase titleComics"> {{ $comic['title'] }} </p>
-                </div>
-            @endforeach
-
-            <div class="more text-white">
-                LOAD MORE
-            </div>
-        </div>
-    </section>
+    </div>
 @endsection

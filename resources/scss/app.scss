@@ -47,7 +47,7 @@ section {
     width: calc(100% / 6);
 }
 
-img {
+.comics {
     width: 150px;
     height: 150px;
     object-position: top;
@@ -59,7 +59,7 @@ img:hover {
     box-shadow: 0 0 11px rgba(255, 255, 255, 0.277);
 }
 
-p {
+.titleComics {
     color: white;
     font-size: 10px;
     font-weight: 800;
@@ -74,4 +74,16 @@ p {
     background-color: #0282f9;
     padding: 10px;
     font-weight: bold;
+}
+
+/* COMIC DETAIL */
+
+.comicDetail {
+    width: 400px;
+    margin-top: 30px;
+}
+
+.cardDetail {
+    position: relative;
+    bottom: 350px;
 }

@@ -11,10 +11,6 @@
 
 <body>
 
-    @include('partials.header')
-
-    @include('partials.jumbotron')
-
     @yield('content')
 
 </body>

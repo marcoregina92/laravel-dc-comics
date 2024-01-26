@@ -38,7 +38,9 @@ class ComicController extends Controller
      */
     public function show(string $id)
     {
-        //
+       $detail = Comic::find($id);
+       $dati = config("data");
+       return view("comics.show", compact("detail", "dati"));
     }
 
     /**
