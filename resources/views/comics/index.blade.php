@@ -3,7 +3,7 @@
 @section('content')
     {{-- HEADER --}}
     <header class="d-flex container-fluid justify-content-between">
-        <img class="mt-4" src="assets/img/dc-logo.png" alt="">
+        <img class="mt-4" src="/assets/img/dc-logo.png" alt="">
         <nav class="d-flex align-items-center">
             @foreach ($dati['menuLink'] as $menuLink)
                 <a class="linkItem px-3" href="">{{ $menuLink['link'] }}</a>
