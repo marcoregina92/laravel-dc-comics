@@ -1,13 +1,77 @@
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    font-family: sans-serif;
-    background: #222;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* HEADER STYLE */
+.linkItem {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    color: #474646;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    height: 450px;
+    background-size: cover;
+    background-image: url("/assets/img/jumbotron.jpg");
+    margin-top: 20px;
+}
+
+/* CURRENT SERIES SECTION */
+
+section {
+    background-color: #1c1c1c;
+}
+
+
+.titleCurrentSeries {
+    color: white;
+    padding: 10px;
+    background-color: #0282f9;
+    width: 144px;
+    position: relative;
+    top: -14px;
+    left: 281px;
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cards {
+    width: calc(100% / 6);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-position: top;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+img:hover {
+    box-shadow: 0 0 11px rgba(255, 255, 255, 0.277);
+}
+
+p {
+    color: white;
+    font-size: 10px;
+    font-weight: 800;
+    text-align: start;
+    padding-top: 10px;
+}
+
+.more {
+    position: relative;
+    left: 548px;
+    width: 120px;
+    background-color: #0282f9;
+    padding: 10px;
+    font-weight: bold;
 }
