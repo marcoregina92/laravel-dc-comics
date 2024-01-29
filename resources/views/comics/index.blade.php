@@ -35,8 +35,9 @@
                     </a>
                 </div>
             @endforeach
-
-            <div class="more text-white">
+        </div>
+        <div class="text-center d-flex justify-content-center">
+            <div class="more text-white mb-5">
                 LOAD MORE
             </div>
         </div>
