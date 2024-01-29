@@ -21,9 +21,9 @@
 
     <div class="container">
         <div class="row cardDetail">
-            <img class="comicDetail" src="{{ $detail->thumb }}" alt="">
-            <h2 class="mt-5">{{ $detail->title }}</h2>
-            <p class="mt-4">{{ $detail->description }}</p>
+            <img class="comicDetail" src="{{ $comic->thumb }}" alt="">
+            <h2 class="mt-5">{{ $comic->title }}</h2>
+            <p class="mt-4">{{ $comic->description }}</p>
         </div>
     </div>
 @endsection
